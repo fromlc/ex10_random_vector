@@ -5,7 +5,6 @@
 // - make each vector element a random number
 // - display vector elements
 //------------------------------------------------------------------------------
-
 #include <iostream>
 #include <vector>
 
@@ -22,9 +21,6 @@ constexpr int RANGE = MAX - MIN + 1;
 // entry point
 //------------------------------------------------------------------------------
 int main() {
-
-    // just for fun, what's the biggest random number with MSVC on x64 PC?
-    cout << "\nBiggest random number: " << RAND_MAX << '\n';
 
     // different random number of vector elements each run
     srand((unsigned int)time(0));
@@ -44,6 +40,9 @@ int main() {
         cout << '\n' << i;
     }
     cout << "\n\n";
+
+    // just for fun, what's the biggest random number with MSVC on x64 PC?
+    cout << "Biggest random number: " << RAND_MAX << "\n\n";
 
     return 0;
 }
